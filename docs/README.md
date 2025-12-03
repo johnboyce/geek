@@ -80,6 +80,25 @@ Detailed configuration for specific peripherals:
 - Performance benchmarking
 - Troubleshooting guides
 
+### 10. [BIOS Configuration](10-bios-configuration.md)
+BIOS settings and updates:
+- Accessing the BIOS
+- Optimal settings for Linux
+- BIOS update procedures
+- Performance tuning
+- Troubleshooting BIOS issues
+
+### 11. [Cool Tools](11-cool-tools.md)
+Essential monitoring and management tools:
+- Hardware information tools (hardinfo, CPU-X)
+- System monitoring (htop, btop, glances, nvtop)
+- Temperature monitoring (lm-sensors)
+- Disk tools (GSmartControl, iotop, duf)
+- Network monitoring (nethogs, iftop)
+- Performance benchmarking (sysbench, stress-ng)
+- System maintenance (Stacer, BleachBit)
+- Power management (powertop, TLP)
+
 ## Quick Navigation
 
 ### By Use Case
