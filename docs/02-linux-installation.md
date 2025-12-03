@@ -5,7 +5,8 @@
 If you're using a MacBook Pro M3 to create the bootable USB for your Geekom AX8:
 
 1. **Download Ubuntu 24.04 LTS ISO**: https://ubuntu.com/download/desktop
-2. **Download Balena Etcher**: https://etcher.balena.io/ (ARM64 version for M3)
+   - Verify the checksum after download for security
+2. **Download Balena Etcher**: https://etcher.balena.io/ (macOS version - automatically optimized for M3)
 3. **Connect SSK USB-C drive** to your MacBook M3
 4. **Flash ISO** using Balena Etcher (easiest method)
 5. **Eject and insert** into Geekom AX8
@@ -67,7 +68,7 @@ This is the easiest and most reliable method for creating a bootable USB on macO
 
 1. **Download Balena Etcher for macOS**
    - Visit: https://etcher.balena.io/
-   - Download the macOS version (Apple Silicon/ARM64 version for M3)
+   - Download the macOS version (automatically provides ARM64 build for M3 Macs)
    - Open the downloaded DMG file
    - Drag Balena Etcher to Applications folder
    - **Note**: M3 Macs may show a security warning - go to System Settings → Privacy & Security to allow

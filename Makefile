@@ -94,7 +94,7 @@ validate-docs: ## Validate all documentation links and structure
 	@for file in $(DOCS_DIR)/*.md README.md; do \
 		echo "Checking $$file..."; \
 		if [ -f "$$file" ]; then \
-			grep -n "](.*)" "$$file" | grep -v "http" | grep -v "^#" || true; \
+			grep -n '\]\([^)]*\)' "$$file" | grep -v "http" | grep -v "^#" || true; \
 		fi; \
 	done
 	@echo "$(GREEN)✓ Documentation validation complete!$(NC)"
@@ -150,15 +150,17 @@ watch: ## Watch for changes and restart server
 	fi
 
 .PHONY: macos-setup
-macos-setup: ## Setup development environment on macOS (including M3)
+macos-setup: ## Setup development environment on macOS (including M3) - installs Homebrew & Node.js if needed
 	@echo "$(BLUE)Setting up macOS development environment...$(NC)"
 	@command -v brew >/dev/null 2>&1 || { \
-		echo "$(YELLOW)Installing Homebrew...$(NC)"; \
+		echo "$(YELLOW)Homebrew not found. This will install Homebrew (requires user interaction).$(NC)"; \
+		echo "$(YELLOW)Press Ctrl+C to cancel, or Enter to continue...$(NC)"; \
+		read -r; \
 		/bin/bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; \
 	}
 	@echo "$(GREEN)✓ Homebrew installed$(NC)"
 	@command -v node >/dev/null 2>&1 || { \
-		echo "$(YELLOW)Installing Node.js...$(NC)"; \
+		echo "$(YELLOW)Installing Node.js via Homebrew...$(NC)"; \
 		brew install node; \
 	}
 	@echo "$(GREEN)✓ Node.js installed$(NC)"
