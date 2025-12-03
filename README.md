@@ -21,21 +21,18 @@ This repository provides comprehensive documentation for:
 Browse the documentation in the `docs/` directory:
 
 1. [Hardware Specifications](docs/01-hardware-specs.md)
-2. [Linux Installation](docs/02-linux-installation.md)
+2. [Linux Installation](docs/02-linux-installation.md) - Includes USB creation guide for MacBook M3
 3. [Development Setup](docs/03-development-setup.md)
 4. [Security Configuration](docs/04-security-configuration.md)
 5. [Remote Access](docs/05-remote-access.md)
 6. [Gaming Setup](docs/06-gaming-setup.md)
 7. [Video Streaming](docs/07-video-streaming.md)
 8. [Troubleshooting](docs/08-troubleshooting.md)
-
-### Documentation
-
-- [Linux Installation Guide](linux-installation-guide.md) - Comprehensive guide for installing Linux on your Mini-PC with distribution recommendations and USB installation instructions
-- [Peripheral Setup Guide](peripheral-setup.md) - Detailed setup and troubleshooting for RedThunder K84 keyboard/mouse, SSK USB-C flash drive, and Acer Nitro gaming monitor
+9. [Peripheral Setup](docs/09-peripheral-setup.md) - RedThunder keyboard/mouse, SSK USB-C drive, Acer monitor
 
 ### Run the Documentation Web App
 
+Using npm:
 ```bash
 # Install dependencies
 npm install
@@ -45,6 +42,19 @@ npm start
 
 # Open browser to http://localhost:3000
 ```
+
+Or using the Makefile (recommended for MacBook M3):
+```bash
+# Install dependencies
+make install
+
+# Start development server
+make dev
+
+# Open browser to http://localhost:3000
+```
+
+For more commands, run `make help`
 
 ## Features
 
@@ -76,6 +86,28 @@ npm start
 
 ## Installation
 
+### Using Makefile (Recommended for MacBook M3)
+
+```bash
+# Clone repository
+git clone https://github.com/johnboyce/geek.git
+cd geek
+
+# Install dependencies
+make install
+
+# Start development server
+make dev
+
+# Or start production server
+make start
+
+# View all available commands
+make help
+```
+
+### Using npm
+
 ```bash
 # Clone repository
 git clone https://github.com/johnboyce/geek.git
@@ -86,9 +118,6 @@ npm install
 
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
 
 # Start production server
 npm start
@@ -174,6 +203,12 @@ For issues, questions, or contributions:
 - Open an issue on GitHub
 - Submit a pull request
 - Check the troubleshooting guide
+
+## Documentation Migration
+
+**Note**: Root-level documentation files (`linux-installation-guide.md` and `peripheral-setup.md`) have been consolidated into the `docs/` directory for better organization. See [DEPRECATED.md](DEPRECATED.md) for details.
+
+All documentation is now in the `docs/` directory with enhanced content including **MacBook M3** specific instructions for creating bootable USB drives.
 
 ## Roadmap
 
