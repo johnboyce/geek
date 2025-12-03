@@ -12,6 +12,18 @@ The Geekom AX8 is a powerful mini PC suitable for software development, gaming, 
 - Boost Clock: Up to 5.2 GHz
 - TDP: 35-54W configurable
 
+### AI Capabilities
+- **Ryzen AI (XDNA NPU)**: Dedicated neural processing unit
+- **AI Performance**: Up to 16 TOPS (Tera Operations Per Second)
+- **AI Engine**: AMD XDNA architecture for efficient AI workloads
+- **Windows Studio Effects**: AI-enhanced video conferencing (Windows)
+- **Linux AI Support**: Compatible with ONNX Runtime, OpenVINO, and DirectML
+- **Use Cases**: 
+  - AI-accelerated image/video processing
+  - Real-time background blur and noise suppression
+  - Local AI model inference (LLMs, image generation)
+  - Machine learning development and testing
+
 ### Graphics
 - AMD Radeon 780M integrated GPU
 - 12 RDNA 3 Compute Units
@@ -67,3 +79,10 @@ The Geekom AX8 is a powerful mini PC suitable for software development, gaming, 
 - Hardware virtualization support (AMD-V)
 - IOMMU support for PCIe passthrough
 - Suitable for running multiple VMs
+
+### AI & Machine Learning
+- NPU acceleration for AI workloads
+- Efficient inference for small to medium AI models
+- Local AI processing without cloud dependencies
+- Suitable for AI development and testing
+- Compatible with popular ML frameworks (PyTorch, TensorFlow, ONNX)
