@@ -182,10 +182,47 @@ Advanced → Power Management
 #### RAM Settings
 ```
 Advanced → Memory Configuration
-  - Memory Frequency: Auto or XMP Profile
-  - XMP: Enabled (if your RAM supports it)
-  Note: Enables full DDR5-5600 speed
+  - Memory Frequency: Auto or EXPO/XMP Profile
+  - EXPO/XMP: Enabled (if your RAM supports it)
+  Note: Enables full DDR5-5600 speed or higher
 ```
+
+**AMD EXPO (Extended Profiles for Overclocking)**
+
+The Geekom AX8's AMD platform supports EXPO profiles for memory overclocking:
+
+- **What is EXPO?**: AMD's answer to Intel XMP, designed specifically for DDR5 memory
+- **Benefits**:
+  - One-click memory performance optimization
+  - Automatically configures optimal timings, voltages, and frequencies
+  - Can achieve DDR5-6000, DDR5-6400, or higher speeds with certified modules
+  - Improves system responsiveness and application performance
+  - Particularly beneficial for content creation, gaming, and AI workloads
+
+**Enabling EXPO:**
+```
+Advanced → Memory Configuration → AMD EXPO
+  1. Ensure you have EXPO-certified DDR5 memory installed
+  2. Set to "Enabled" or select "Profile 1"
+  3. Save and exit (F10)
+  4. System will reboot and train memory at new settings
+  5. If unstable, BIOS will automatically revert to safe defaults
+```
+
+**Verification in Linux:**
+```bash
+# Check current memory speed
+sudo dmidecode --type memory | grep -i speed
+
+# Or using lshw
+sudo lshw -short -C memory
+```
+
+**Troubleshooting:**
+- If system is unstable after enabling EXPO, try "Profile 2" or manual tuning
+- Ensure adequate cooling, as higher memory speeds generate more heat
+- Update BIOS to latest version for best EXPO compatibility
+- Some non-certified DDR5 modules may work but are not guaranteed
 
 ### Security Settings
 

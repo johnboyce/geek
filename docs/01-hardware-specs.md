@@ -37,6 +37,14 @@ The Geekom AX8 is a powerful mini PC suitable for software development, gaming, 
 - Up to 64GB DDR5-5600 MHz
 - Dual-channel configuration
 - SO-DIMM slots (expandable)
+- **AMD EXPO Support**: Extended Profiles for Overclocking
+  - EXPO is AMD's equivalent to Intel XMP for memory overclocking
+  - Enables one-click memory performance optimization
+  - Compatible with DDR5 EXPO-certified memory modules
+  - Automatically configures optimal timings and voltages
+  - Can achieve speeds beyond JEDEC standards (up to DDR5-6400+ with compatible modules)
+  - Check BIOS settings to enable EXPO profiles
+  - Recommended for users wanting maximum memory performance
 
 ### Storage
 - M.2 2280 NVMe SSD (PCIe 4.0)
