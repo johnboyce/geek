@@ -2,9 +2,20 @@ const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
 const { marked } = require('marked');
+const rateLimit = require('express-rate-limit');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Rate limiting to prevent abuse
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per windowMs
+  message: { error: 'Too many requests, please try again later.' }
+});
+
+// Apply rate limiting to all API routes
+app.use('/api/', apiLimiter);
 
 // Serve static files
 app.use(express.static('public'));
