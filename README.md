@@ -30,8 +30,8 @@ The easiest way to browse the documentation is through our GitHub Pages site, wh
 
 Browse the documentation in the `docs/` directory (organized in chronological setup order):
 
-1. [Hardware Specifications](docs/01-hardware-specs.md) - Including AI capabilities
-2. [BIOS Configuration](docs/02-bios-configuration.md) - Configure before OS installation
+1. [Hardware Specifications](docs/01-hardware-specs.md) - Including AI capabilities and AMD EXPO
+2. [BIOS Configuration](docs/02-bios-configuration.md) - Configure before OS installation, includes EXPO settings
 3. [Linux Installation](docs/03-linux-installation.md) - Includes USB creation guide for MacBook M3
 4. [Peripheral Setup](docs/04-peripheral-setup.md) - RedThunder keyboard/mouse, SSK USB-C drive, Acer monitor
 5. [Development Setup](docs/05-development-setup.md) - Programming languages, IDEs, and tools
@@ -42,6 +42,8 @@ Browse the documentation in the `docs/` directory (organized in chronological se
 10. [Video Streaming](docs/10-video-streaming.md) - OBS, media servers, and streaming
 11. [Cool Tools](docs/11-cool-tools.md) - System monitoring, benchmarking, and management tools
 12. [Troubleshooting](docs/12-troubleshooting.md) - Solutions for common issues
+13. [Home Server Operating Systems](docs/13-home-server-os.md) - CasaOS, Umbrel, TrueNAS, and more
+14. [BookStack Installation](docs/14-bookstack-installation.md) - Self-hosted documentation platform
 
 ### Run the Documentation Web App
 
@@ -225,9 +227,12 @@ All documentation is now in the `docs/` directory with enhanced content includin
 
 ## Roadmap
 
+- [x] Home server OS guides (CasaOS, Umbrel, TrueNAS, etc.)
+- [x] BookStack installation and documentation migration guide
+- [x] AMD EXPO memory overclocking information
 - [ ] Additional security hardening guides
 - [ ] Container orchestration (Kubernetes/Docker Swarm)
-- [ ] Home automation integration
+- [ ] Home automation integration (Home Assistant deep dive)
 - [ ] Advanced networking configurations
 - [ ] Automated setup scripts
 - [ ] Video tutorials

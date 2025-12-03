@@ -7,6 +7,7 @@ This directory contains comprehensive documentation for setting up and managing 
 ### 1. [Hardware Specifications](01-hardware-specs.md)
 Complete hardware specifications of the Geekom AX8, including:
 - Processor, GPU, and memory details
+- **AMD EXPO** (Extended Profiles for Overclocking) support
 - **AI Capabilities** (Ryzen AI NPU with 16 TOPS)
 - Connectivity options
 - Performance expectations for different workloads
@@ -15,6 +16,7 @@ Complete hardware specifications of the Geekom AX8, including:
 **Configure BIOS before installing the operating system:**
 - Accessing the BIOS
 - Optimal settings for Linux
+- **AMD EXPO configuration** for memory overclocking
 - BIOS update procedures
 - Performance tuning
 - Troubleshooting BIOS issues
@@ -111,6 +113,27 @@ Solutions for common issues:
 - Performance issues
 - System recovery
 
+### 13. [Home Server Operating Systems](13-home-server-os.md)
+**NEW: Transform your AX8 into a powerful home server:**
+- CasaOS (beginner-friendly with beautiful UI)
+- Cosmos Cloud (security-focused)
+- Umbrel (polished experience with crypto features)
+- TrueNAS SCALE (enterprise NAS)
+- OpenMediaVault (traditional NAS)
+- Proxmox VE (virtualization platform)
+- YunoHost (all-in-one server with email)
+- Comparison and installation guides
+
+### 14. [BookStack Installation](14-bookstack-installation.md)
+**NEW: Self-hosted documentation platform:**
+- What is BookStack and why use it
+- Installation methods (Docker, native, CasaOS)
+- Initial configuration and setup
+- **Migrating content from this repository to BookStack**
+- Automated import scripts
+- Maintenance and backup procedures
+- Advanced configuration
+
 ## Quick Navigation
 
 ### By Use Case
@@ -131,7 +154,10 @@ Solutions for common issues:
 1. Hardware Specs → BIOS Config → Linux Installation → Security Configuration → Remote Access → Cool Tools
 
 **Home Server:**
-1. Hardware Specs → BIOS Config → Linux Installation → Security → Remote Access → Video Streaming
+1. Hardware Specs → BIOS Config → Linux Installation → Security → Home Server OS → Remote Access → BookStack
+
+**Documentation Platform:**
+1. Hardware Specs → Linux Installation → Home Server OS (CasaOS) → BookStack Installation
 
 ## Tips for Using This Documentation
 
