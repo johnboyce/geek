@@ -204,6 +204,12 @@ For issues, questions, or contributions:
 - Submit a pull request
 - Check the troubleshooting guide
 
+## Documentation Migration
+
+**Note**: Root-level documentation files (`linux-installation-guide.md` and `peripheral-setup.md`) have been consolidated into the `docs/` directory for better organization. See [DEPRECATED.md](DEPRECATED.md) for details.
+
+All documentation is now in the `docs/` directory with enhanced content including **MacBook M3** specific instructions for creating bootable USB drives.
+
 ## Roadmap
 
 - [ ] Additional security hardening guides

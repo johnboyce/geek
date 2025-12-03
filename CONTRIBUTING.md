@@ -85,6 +85,25 @@ For the web application:
 
 ## Development Setup
 
+### Using Makefile (Recommended for macOS/MacBook M3)
+
+```bash
+# Clone repository
+git clone https://github.com/johnboyce/geek.git
+cd geek
+
+# Install dependencies
+make install
+
+# Run development server
+make dev
+
+# View all available commands
+make help
+```
+
+### Using npm
+
 ```bash
 # Clone repository
 git clone https://github.com/johnboyce/geek.git
