@@ -29,6 +29,11 @@ Browse the documentation in the `docs/` directory:
 7. [Video Streaming](docs/07-video-streaming.md)
 8. [Troubleshooting](docs/08-troubleshooting.md)
 
+### Documentation
+
+- [Linux Installation Guide](linux-installation-guide.md) - Comprehensive guide for installing Linux on your Mini-PC with distribution recommendations and USB installation instructions
+- [Peripheral Setup Guide](peripheral-setup.md) - Detailed setup and troubleshooting for RedThunder K84 keyboard/mouse, SSK USB-C flash drive, and Acer Nitro gaming monitor
+
 ### Run the Documentation Web App
 
 ```bash
