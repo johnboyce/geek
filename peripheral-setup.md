@@ -6,6 +6,8 @@ This guide provides detailed setup information for the specific peripherals used
 
 ### RedThunder K84 Wireless Keyboard and Mouse Combo
 
+![RedThunder K84 Wireless Keyboard and Mouse Combo](https://m.media-amazon.com/images/I/715LTiwaPWL._AC_SL1500_.jpg)
+
 **Specifications:**
 - Type: 2.4GHz Wireless
 - Connection: USB-A receiver (nano)
@@ -33,6 +35,8 @@ This guide provides detailed setup information for the specific peripherals used
 - DPI switching: Hardware buttons on mouse
 
 ### SSK 128GB Dual USB C Flash Drive
+
+![SSK 128GB Dual USB C Flash Drive](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc1.neweggimages.com%2FProductImage%2FAZS4S2312270ESHIQBC.jpg&f=1&nofb=1&ipt=97b7d2f8868bd71dc44aba282b57e0dbef103ecefe7db4087594c21c85d73cef)
 
 **Specifications:**
 - Model: 2-in-1 Type C + USB A
@@ -104,6 +108,8 @@ dd if=/dev/zero of=/path/to/mount/testfile bs=1M count=1024
   ```
 
 ### Acer Nitro KG241Y Sbiip Gaming Monitor
+
+![Acer Nitro KG241Y Gaming Monitor](https://carrefourbr.vtexassets.com/arquivos/ids/182370079/image-2.jpg?v=638720586149930000)
 
 **Specifications:**
 - Size: 23.8 inches
