@@ -136,6 +136,70 @@ Before submitting:
 4. **Test on mobile**: Ensure responsive design works
 5. **Check accessibility**: Ensure content is accessible
 
+## GitHub Pages Deployment
+
+The documentation is automatically deployed to GitHub Pages when changes are merged to the `main` branch.
+
+### How It Works
+
+1. **Workflow Trigger**: The `.github/workflows/deploy-pages.yml` workflow runs on:
+   - Push to `main` branch
+   - Manual workflow dispatch
+
+2. **Build Process**:
+   - Checks out the repository
+   - Installs Node.js dependencies
+   - Uploads the `public/` directory as a GitHub Pages artifact
+   - Deploys to GitHub Pages
+
+3. **Access**: Once deployed, the documentation is available at:
+   - https://johnboyce.github.io/geek/
+
+### Enabling GitHub Pages (One-Time Setup)
+
+If GitHub Pages returns a 404, ensure it's properly configured:
+
+1. Go to repository **Settings** → **Pages**
+2. Under **Source**, select:
+   - **Deploy from a branch**: NOT this option
+   - **GitHub Actions**: Select this option
+3. Save the configuration
+4. Trigger a deployment:
+   - Merge a PR to `main`, or
+   - Go to **Actions** → **Deploy to GitHub Pages** → **Run workflow**
+
+### Testing Before Deployment
+
+Always test locally before merging to `main`:
+
+```bash
+# Install dependencies
+npm install
+
+# Start local server
+npm start
+
+# Visit http://localhost:3000
+```
+
+### Troubleshooting GitHub Pages
+
+**404 Error:**
+- Verify GitHub Pages is enabled and set to "GitHub Actions"
+- Check that the workflow ran successfully in the Actions tab
+- Ensure the `public/` directory contains `index.html` and `.nojekyll`
+- Wait 1-2 minutes after deployment for DNS propagation
+
+**Workflow Fails:**
+- Check the Actions tab for error messages
+- Verify `package.json` dependencies are correct
+- Ensure `npm ci` can install dependencies successfully
+
+**Outdated Content:**
+- Clear browser cache (Ctrl+F5 or Cmd+Shift+R)
+- Check the deployment time in the Actions tab
+- Verify the latest commit is deployed
+
 ## Questions?
 
 Not sure about something? Feel free to:

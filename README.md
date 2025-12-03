@@ -24,21 +24,24 @@ This repository provides comprehensive documentation for:
 
 The easiest way to browse the documentation is through our GitHub Pages site, which provides a clean, responsive interface with search functionality.
 
+> **Note**: GitHub Pages is automatically deployed from the `main` branch. If you encounter a 404 error, ensure GitHub Pages is configured to use "GitHub Actions" as the source (Repository Settings → Pages → Source: GitHub Actions). See [CONTRIBUTING.md](CONTRIBUTING.md#github-pages-deployment) for more details.
+
 ### View Documentation Locally
 
-Browse the documentation in the `docs/` directory:
+Browse the documentation in the `docs/` directory (organized in chronological setup order):
 
-1. [Hardware Specifications](docs/01-hardware-specs.md)
-2. [Linux Installation](docs/02-linux-installation.md) - Includes USB creation guide for MacBook M3
-3. [Development Setup](docs/03-development-setup.md)
-4. [Security Configuration](docs/04-security-configuration.md)
-5. [Remote Access](docs/05-remote-access.md)
-6. [Gaming Setup](docs/06-gaming-setup.md)
-7. [Video Streaming](docs/07-video-streaming.md)
-8. [Troubleshooting](docs/08-troubleshooting.md)
-9. [Peripheral Setup](docs/09-peripheral-setup.md) - RedThunder keyboard/mouse, SSK USB-C drive, Acer monitor
-10. [BIOS Configuration](docs/10-bios-configuration.md) - BIOS settings, updates, and optimization
+1. [Hardware Specifications](docs/01-hardware-specs.md) - Including AI capabilities
+2. [BIOS Configuration](docs/02-bios-configuration.md) - Configure before OS installation
+3. [Linux Installation](docs/03-linux-installation.md) - Includes USB creation guide for MacBook M3
+4. [Peripheral Setup](docs/04-peripheral-setup.md) - RedThunder keyboard/mouse, SSK USB-C drive, Acer monitor
+5. [Development Setup](docs/05-development-setup.md) - Programming languages, IDEs, and tools
+6. [AI & Machine Learning Setup](docs/06-ai-ml-setup.md) - Leverage Ryzen AI NPU for ML workloads
+7. [Security Configuration](docs/07-security-configuration.md) - Harden your system
+8. [Remote Access](docs/08-remote-access.md) - SSH, VNC, RDP, and web management
+9. [Gaming Setup](docs/09-gaming-setup.md) - Steam, Proton, and game optimization
+10. [Video Streaming](docs/10-video-streaming.md) - OBS, media servers, and streaming
 11. [Cool Tools](docs/11-cool-tools.md) - System monitoring, benchmarking, and management tools
+12. [Troubleshooting](docs/12-troubleshooting.md) - Solutions for common issues
 
 ### Run the Documentation Web App
 
@@ -182,7 +185,7 @@ This documentation is designed for:
 ## Supported Configurations
 
 - **Operating System**: Ubuntu 24.04 LTS, Fedora 40+, Pop!_OS 22.04, and other modern Linux distributions
-- **Hardware**: Optimized for Geekom AX8 (AMD Ryzen 9 8945HS, Radeon 780M)
+- **Hardware**: Optimized for Geekom AX8 (AMD Ryzen 9 8945HS with Ryzen AI NPU, Radeon 780M)
 - **Use Cases**: Development, gaming, streaming, remote work, home server
 
 ## Security Considerations
