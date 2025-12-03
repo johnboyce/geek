@@ -24,6 +24,8 @@ This repository provides comprehensive documentation for:
 
 The easiest way to browse the documentation is through our GitHub Pages site, which provides a clean, responsive interface with search functionality.
 
+> **Note**: GitHub Pages is automatically deployed from the `main` branch. If you encounter a 404 error, ensure GitHub Pages is configured to use "GitHub Actions" as the source (Repository Settings → Pages → Source: GitHub Actions). See [CONTRIBUTING.md](CONTRIBUTING.md#github-pages-deployment) for more details.
+
 ### View Documentation Locally
 
 Browse the documentation in the `docs/` directory (organized in chronological setup order):
