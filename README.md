@@ -14,9 +14,17 @@ This repository provides comprehensive documentation for:
 - Port forwarding and network configuration
 - Troubleshooting common issues
 
+**📖 [View Documentation Online](https://johnboyce.github.io/geek/)** - Browse the documentation through our GitHub Pages site for the best reading experience.
+
 ## Quick Start
 
-### View Documentation
+### View Documentation Online
+
+**🌐 [Visit the GitHub Pages Site](https://johnboyce.github.io/geek/)**
+
+The easiest way to browse the documentation is through our GitHub Pages site, which provides a clean, responsive interface with search functionality.
+
+### View Documentation Locally
 
 Browse the documentation in the `docs/` directory:
 
@@ -29,6 +37,8 @@ Browse the documentation in the `docs/` directory:
 7. [Video Streaming](docs/07-video-streaming.md)
 8. [Troubleshooting](docs/08-troubleshooting.md)
 9. [Peripheral Setup](docs/09-peripheral-setup.md) - RedThunder keyboard/mouse, SSK USB-C drive, Acer monitor
+10. [BIOS Configuration](docs/10-bios-configuration.md) - BIOS settings, updates, and optimization
+11. [Cool Tools](docs/11-cool-tools.md) - System monitoring, benchmarking, and management tools
 
 ### Run the Documentation Web App
 
