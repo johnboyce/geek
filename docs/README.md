@@ -7,17 +7,34 @@ This directory contains comprehensive documentation for setting up and managing 
 ### 1. [Hardware Specifications](01-hardware-specs.md)
 Complete hardware specifications of the Geekom AX8, including:
 - Processor, GPU, and memory details
+- **AI Capabilities** (Ryzen AI NPU with 16 TOPS)
 - Connectivity options
 - Performance expectations for different workloads
 
-### 2. [Linux Installation](02-linux-installation.md)
+### 2. [BIOS Configuration](02-bios-configuration.md)
+**Configure BIOS before installing the operating system:**
+- Accessing the BIOS
+- Optimal settings for Linux
+- BIOS update procedures
+- Performance tuning
+- Troubleshooting BIOS issues
+
+### 3. [Linux Installation](03-linux-installation.md)
 Step-by-step guide for installing Linux:
 - Recommended distributions for different use cases
-- BIOS/UEFI configuration
 - Installation process and partitioning
 - Post-installation setup
+- USB creation guide for MacBook M3
 
-### 3. [Development Setup](03-development-setup.md)
+### 4. [Peripheral Setup](04-peripheral-setup.md)
+**Set up peripherals after OS installation:**
+- RedThunder K84 wireless keyboard and mouse
+- SSK 128GB USB-C flash drive
+- Acer Nitro KG241Y gaming monitor
+- Performance benchmarking
+- Troubleshooting guides
+
+### 5. [Development Setup](05-development-setup.md)
 Complete development environment configuration:
 - Version control (Git)
 - Programming languages (Node.js, Python, Go, Rust, Java)
@@ -26,7 +43,17 @@ Complete development environment configuration:
 - IDEs and editors
 - Shell enhancements
 
-### 4. [Security Configuration](04-security-configuration.md)
+### 6. [AI & Machine Learning Setup](06-ai-ml-setup.md)
+**NEW: Leverage the Ryzen AI NPU for ML workloads:**
+- AMD Ryzen AI (XDNA NPU) overview
+- Python ML environment setup
+- PyTorch and TensorFlow with ROCm
+- ONNX Runtime for NPU acceleration
+- Running local LLMs (Ollama, LM Studio)
+- Stable Diffusion and image generation
+- AI model optimization and performance
+
+### 7. [Security Configuration](07-security-configuration.md)
 Comprehensive security hardening guide:
 - Firewall configuration (UFW)
 - SSH hardening
@@ -36,7 +63,7 @@ Comprehensive security hardening guide:
 - VPN setup (WireGuard)
 - Security auditing tools
 
-### 5. [Remote Access](05-remote-access.md)
+### 8. [Remote Access](08-remote-access.md)
 Configure remote access to your system:
 - SSH setup and configuration
 - VNC (Virtual Network Computing)
@@ -44,8 +71,9 @@ Configure remote access to your system:
 - NoMachine
 - Tailscale VPN
 - Port forwarding and DDNS
+- Web-based management tools
 
-### 6. [Gaming Setup](06-gaming-setup.md)
+### 9. [Gaming Setup](09-gaming-setup.md)
 Gaming on Linux guide:
 - Steam and Proton configuration
 - Gaming platforms (Lutris, Heroic)
@@ -54,7 +82,7 @@ Gaming on Linux guide:
 - Controller setup
 - Emulation
 
-### 7. [Video Streaming](07-video-streaming.md)
+### 10. [Video Streaming](10-video-streaming.md)
 Streaming and media server setup:
 - Video playback and hardware acceleration
 - OBS Studio for streaming
@@ -62,31 +90,6 @@ Streaming and media server setup:
 - Video transcoding
 - Live streaming with FFmpeg
 - IP camera/DVR setup
-
-### 8. [Troubleshooting](08-troubleshooting.md)
-Solutions for common issues:
-- Boot problems
-- Graphics issues
-- Network connectivity
-- Audio problems
-- Performance issues
-- System recovery
-
-### 9. [Peripheral Setup](09-peripheral-setup.md)
-Detailed configuration for specific peripherals:
-- RedThunder K84 wireless keyboard and mouse
-- SSK 128GB USB-C flash drive
-- Acer Nitro KG241Y gaming monitor
-- Performance benchmarking
-- Troubleshooting guides
-
-### 10. [BIOS Configuration](10-bios-configuration.md)
-BIOS settings and updates:
-- Accessing the BIOS
-- Optimal settings for Linux
-- BIOS update procedures
-- Performance tuning
-- Troubleshooting BIOS issues
 
 ### 11. [Cool Tools](11-cool-tools.md)
 Essential monitoring and management tools:
@@ -99,24 +102,36 @@ Essential monitoring and management tools:
 - System maintenance (Stacer, BleachBit)
 - Power management (powertop, TLP)
 
+### 12. [Troubleshooting](12-troubleshooting.md)
+Solutions for common issues:
+- Boot problems
+- Graphics issues
+- Network connectivity
+- Audio problems
+- Performance issues
+- System recovery
+
 ## Quick Navigation
 
 ### By Use Case
 
 **Software Developer:**
-1. Hardware Specs → Linux Installation → Development Setup → Security → Remote Access
+1. Hardware Specs → BIOS Config → Linux Installation → Peripheral Setup → Development Setup → Security → Remote Access
+
+**AI/ML Developer:**
+1. Hardware Specs → BIOS Config → Linux Installation → Development Setup → AI/ML Setup → Security
 
 **Gamer:**
-1. Hardware Specs → Linux Installation → Gaming Setup → Troubleshooting
+1. Hardware Specs → BIOS Config → Linux Installation → Peripheral Setup → Gaming Setup → Troubleshooting
 
 **Content Creator/Streamer:**
-1. Hardware Specs → Linux Installation → Video Streaming → Remote Access
+1. Hardware Specs → BIOS Config → Linux Installation → Peripheral Setup → Video Streaming → Remote Access
 
 **System Administrator:**
-1. Hardware Specs → Linux Installation → Security Configuration → Remote Access
+1. Hardware Specs → BIOS Config → Linux Installation → Security Configuration → Remote Access → Cool Tools
 
 **Home Server:**
-1. Hardware Specs → Linux Installation → Security → Remote Access → Video Streaming
+1. Hardware Specs → BIOS Config → Linux Installation → Security → Remote Access → Video Streaming
 
 ## Tips for Using This Documentation
 
