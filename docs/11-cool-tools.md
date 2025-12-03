@@ -600,7 +600,7 @@ sudo nano /usr/share/logwatch/default.conf/logwatch.conf
 
 ## Tips for Using These Tools
 
-1. **Start with basics**: Begin with `htop`, `sensors`, and `htop` before moving to advanced tools
+1. **Start with basics**: Begin with `htop`, `sensors`, and `glances` before moving to advanced tools
 2. **Regular monitoring**: Use tools like `glances` or `btop` daily to understand your system's normal behavior
 3. **Benchmark early**: Run benchmarks after setup to have baseline performance data
 4. **Create aliases**: Add frequently used commands to your `.bashrc` or `.zshrc`
