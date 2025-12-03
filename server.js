@@ -36,7 +36,19 @@ app.get('/api/docs/:filename', async (req, res) => {
       ? req.params.filename 
       : `${req.params.filename}.md`;
     
-    const filePath = path.join(__dirname, 'docs', filename);
+    // Prevent path traversal attacks
+    if (filename.includes('..') || filename.includes('/') || filename.includes('\\')) {
+      return res.status(400).json({ error: 'Invalid filename' });
+    }
+    
+    const docsDir = path.join(__dirname, 'docs');
+    const filePath = path.normalize(path.join(docsDir, filename));
+    
+    // Ensure the resolved path is within docs directory
+    if (!filePath.startsWith(docsDir)) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+    
     const content = await fs.readFile(filePath, 'utf-8');
     const html = marked(content);
     
@@ -46,8 +58,13 @@ app.get('/api/docs/:filename', async (req, res) => {
       html
     });
   } catch (error) {
-    console.error('Error reading documentation file:', error);
-    res.status(404).json({ error: 'Documentation not found' });
+    // Don't expose internal error details
+    if (error.code === 'ENOENT') {
+      res.status(404).json({ error: 'Documentation not found' });
+    } else {
+      console.error('Error reading documentation file:', error.message);
+      res.status(500).json({ error: 'Failed to load documentation' });
+    }
   }
 });
 

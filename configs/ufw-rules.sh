@@ -4,7 +4,10 @@
 
 echo "Configuring UFW Firewall..."
 
-# Reset UFW to defaults (optional - comment out if you want to keep existing rules)
+# ⚠️  WARNING: Reset UFW to defaults (optional - comment out if you want to keep existing rules)
+# ⚠️  This will REMOVE ALL EXISTING FIREWALL RULES!
+# ⚠️  If you're connected via SSH and don't have physical access, make sure SSH rules are
+# ⚠️  configured below BEFORE uncommenting this line, or you may be locked out!
 # sudo ufw --force reset
 
 # Set default policies

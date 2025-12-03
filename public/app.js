@@ -124,14 +124,41 @@ function addCopyButtons() {
         
         button.addEventListener('click', () => {
             const code = block.textContent;
-            navigator.clipboard.writeText(code).then(() => {
-                button.textContent = 'Copied!';
+            
+            // Check if clipboard API is available
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(() => {
+                    button.textContent = 'Copied!';
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                    button.textContent = 'Failed';
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                    }, 2000);
+                });
+            } else {
+                // Fallback for browsers without clipboard API
+                const textarea = document.createElement('textarea');
+                textarea.value = code;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    button.textContent = 'Copied!';
+                } catch (err) {
+                    console.error('Failed to copy:', err);
+                    button.textContent = 'Failed';
+                }
+                document.body.removeChild(textarea);
                 setTimeout(() => {
                     button.textContent = 'Copy';
                 }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy:', err);
-            });
+            }
         });
         
         pre.style.position = 'relative';

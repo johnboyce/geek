@@ -264,6 +264,9 @@ sudo apt install -y wireguard
 # Generate keys
 wg genkey | sudo tee /etc/wireguard/privatekey | wg pubkey | sudo tee /etc/wireguard/publickey
 
+# Secure private key permissions (critical!)
+sudo chmod 600 /etc/wireguard/privatekey
+
 # Create config
 sudo nano /etc/wireguard/wg0.conf
 ```
