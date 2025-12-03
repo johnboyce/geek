@@ -735,7 +735,7 @@ services:
     environment:
       POSTGRES_DB: guacamole_db
       POSTGRES_USER: guacamole_user
-      POSTGRES_PASSWORD: your_secure_password
+      POSTGRES_PASSWORD: CHANGE_THIS_SECURE_PASSWORD
     volumes:
       - ./init:/docker-entrypoint-initdb.d
       - ./data:/var/lib/postgresql/data
@@ -751,7 +751,7 @@ services:
       POSTGRES_HOSTNAME: postgres
       POSTGRES_DATABASE: guacamole_db
       POSTGRES_USER: guacamole_user
-      POSTGRES_PASSWORD: your_secure_password
+      POSTGRES_PASSWORD: CHANGE_THIS_SECURE_PASSWORD
     depends_on:
       - guacd
       - postgres
@@ -887,9 +887,13 @@ sudo ufw allow 'Nginx Full'
 
 3. **Two-Factor Authentication:**
    ```bash
+   # Check latest version at https://guacamole.apache.org/releases/
+   # Replace VERSION with current version (e.g., 1.5.4)
+   VERSION="1.5.4"
+   
    # Install TOTP extension
-   docker exec guacamole wget https://apache.org/dyn/closer.cgi?action=download&filename=guacamole/1.5.3/binary/guacamole-auth-totp-1.5.3.jar
-   # Copy to extensions folder and restart
+   docker exec guacamole wget "https://apache.org/dyn/closer.cgi?action=download&filename=guacamole/${VERSION}/binary/guacamole-auth-totp-${VERSION}.jar"
+   # Copy to extensions folder and restart container
    ```
 
 **Best For:**
