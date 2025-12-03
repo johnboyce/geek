@@ -1,6 +1,9 @@
 # Geekom AX8 Hardware Specifications
 
 ## Overview
+
+![Geekom AX8 Mini PC](https://www.geekompc.com/wp-content/uploads/2024/07/AX8-PRO-PWOER.webp)
+
 The Geekom AX8 is a powerful mini PC suitable for software development, gaming, and multimedia applications.
 
 ## Specifications
