@@ -1,0 +1,68 @@
+# Hardened SSH Server Configuration
+# File: /etc/ssh/sshd_config
+# Backup original: sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+# Test config: sudo sshd -t
+# Restart: sudo systemctl restart sshd
+
+# Change default port (security through obscurity - not required but helps)
+Port 2222
+
+# Protocol version 2 only
+Protocol 2
+
+# Listen on specific interface (optional)
+# ListenAddress 0.0.0.0
+
+# Authentication
+PermitRootLogin no
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+
+# Allow specific users only (optional)
+AllowUsers yourusername
+
+# Limit authentication attempts
+MaxAuthTries 3
+MaxSessions 2
+
+# Disconnect idle sessions
+ClientAliveInterval 300
+ClientAliveCountMax 2
+LoginGraceTime 30
+
+# Disable forwarding (enable only if needed)
+X11Forwarding no
+AllowTcpForwarding yes
+AllowStreamLocalForwarding no
+GatewayPorts no
+PermitTunnel no
+
+# Use strong ciphers only
+Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256
+KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256
+
+# Logging
+SyslogFacility AUTH
+LogLevel VERBOSE
+
+# Strict mode for file permissions
+StrictModes yes
+
+# Other security settings
+HostbasedAuthentication no
+IgnoreRhosts yes
+PrintMotd no
+PrintLastLog yes
+TCPKeepAlive yes
+Compression delayed
+UsePAM yes
+
+# SFTP only for specific users (optional)
+# Match User sftponly
+#     ForceCommand internal-sftp
+#     ChrootDirectory /home/sftponly
+#     AllowTcpForwarding no
+#     X11Forwarding no
