@@ -435,7 +435,9 @@ Book: "Geekom AX8 Documentation"
 
 ### Method 2: Automated Import Script
 
-Create a script to automate the import process:
+Create a script to automate the import process.
+
+**Important**: Before using these scripts, update the configuration variables (URLs, tokens, and paths) to match your setup.
 
 ```bash
 #!/bin/bash
@@ -445,7 +447,7 @@ Create a script to automate the import process:
 BOOKSTACK_URL="http://your-ax8-ip:6875"
 TOKEN_ID="your_token_id"
 TOKEN_SECRET="your_token_secret"
-DOCS_DIR="/home/runner/work/geek/geek/docs"
+DOCS_DIR="$HOME/geek/docs"  # Adjust this to your repository path
 
 # Create API token first in BookStack:
 # Settings → API Tokens → Create Token
@@ -494,7 +496,11 @@ chmod +x bookstack-import.sh
 
 ### Method 3: Using BookStack's API with Python
 
-More robust solution with better error handling:
+More robust solution with better error handling.
+
+**Prerequisites**: Python 3 and the `requests` library.
+
+**Important**: Update all configuration variables at the top of the script before running.
 
 ```python
 #!/usr/bin/env python3
@@ -509,7 +515,7 @@ from pathlib import Path
 BOOKSTACK_URL = "http://your-ax8-ip:6875"
 TOKEN_ID = "your_token_id"
 TOKEN_SECRET = "your_token_secret"
-DOCS_DIR = "/home/runner/work/geek/geek/docs"
+DOCS_DIR = "/path/to/your/geek/docs"  # Update this to match your repository location
 
 # API headers
 headers = {
@@ -545,7 +551,7 @@ def create_chapter(book_id, name, description=""):
     return response.json()
 
 def create_page(book_id, chapter_id, name, markdown_content):
-    """Create a new page"""
+    """Create a new page with the given content"""
     data = {
         "book_id": book_id,
         "chapter_id": chapter_id,
@@ -562,11 +568,14 @@ def create_page(book_id, chapter_id, name, markdown_content):
 def import_docs():
     """Main import function"""
     # Create main book
+    # Note: If you already have books, you may want to use an existing book_id
+    # instead of creating a new one
     book = create_book(
         "Geekom AX8 Documentation",
         "Complete guide for setting up and using the Geekom AX8"
     )
     book_id = book["id"]
+    print(f"Created book with ID: {book_id}")
     
     # Create chapters and import pages
     docs = [
