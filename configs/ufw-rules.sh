@@ -2,12 +2,28 @@
 # UFW Firewall Configuration Script
 # Review and customize before running
 
+echo "=========================================="
+echo "UFW Firewall Configuration Script"
+echo "=========================================="
+echo ""
+echo "This script will configure your firewall rules."
+echo "Please review the settings before proceeding."
+echo ""
+read -p "Continue? (yes/no): " confirm
+
+if [ "$confirm" != "yes" ]; then
+    echo "Configuration cancelled."
+    exit 0
+fi
+
+echo ""
 echo "Configuring UFW Firewall..."
 
-# ⚠️  WARNING: Reset UFW to defaults (optional - comment out if you want to keep existing rules)
+# ⚠️  WARNING: Reset UFW to defaults (NOT RECOMMENDED - see ufw-reset.sh instead)
 # ⚠️  This will REMOVE ALL EXISTING FIREWALL RULES!
 # ⚠️  If you're connected via SSH and don't have physical access, make sure SSH rules are
 # ⚠️  configured below BEFORE uncommenting this line, or you may be locked out!
+# ⚠️  Consider using the separate ufw-reset.sh script with additional safety checks.
 # sudo ufw --force reset
 
 # Set default policies

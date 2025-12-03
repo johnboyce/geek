@@ -41,11 +41,11 @@ app.get('/api/docs/:filename', async (req, res) => {
       return res.status(400).json({ error: 'Invalid filename' });
     }
     
-    const docsDir = path.join(__dirname, 'docs');
-    const filePath = path.normalize(path.join(docsDir, filename));
+    const docsDir = path.resolve(__dirname, 'docs');
+    const filePath = path.resolve(docsDir, filename);
     
     // Ensure the resolved path is within docs directory
-    if (!filePath.startsWith(docsDir)) {
+    if (!filePath.startsWith(docsDir + path.sep)) {
       return res.status(403).json({ error: 'Access denied' });
     }
     
