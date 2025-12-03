@@ -10,7 +10,7 @@ This guide provides detailed setup information for the specific peripherals used
 - Type: 2.4GHz Wireless
 - Connection: USB-A receiver (nano)
 - Keyboard: 84-key compact layout
-- Mouse: Ergonomic design with adjustable DPI
+- Mouse: Ergonomic design with adjustable DPI (typically 800-2400 DPI)
 - Range: Up to 10 meters
 - Battery: AA/AAA (check device)
 - Power saving: Auto-sleep mode
@@ -134,8 +134,7 @@ dd if=/dev/zero of=/path/to/mount/testfile bs=1M count=1024
 3. **Enable High Refresh Rate:**
 
    **GNOME (Ubuntu, Fedora):**
-   - Open Settings
-   - Navigate to Displays
+   - Settings → Displays
    - Select 165Hz (or 144Hz) from Refresh Rate dropdown
    - Click Apply
    
@@ -163,6 +162,11 @@ dd if=/dev/zero of=/path/to/mount/testfile bs=1M count=1024
        Identifier "HDMI-1"
        Modeline "1920x1080_165.00"  581.64  1920 2072 2288 2656  1080 1081 1084 1153  -HSync +Vsync
        Option "PreferredMode" "1920x1080_165.00"
+   EndSection
+   
+   Section "Screen"
+       Identifier "Screen0"
+       Monitor "HDMI-1"
    EndSection
    ```
 
@@ -276,7 +280,9 @@ dd if=/dev/zero of=/path/to/mount/testfile bs=1M count=1024
 
 ## Full System Compatibility Matrix
 
-| Component | Ubuntu 24.04 | Pop!_OS 22.04 | Fedora 41 | Linux Mint 21.3 | Manjaro |
+> **Note**: Compatibility verified as of December 2024. Newer distribution versions should maintain or improve compatibility.
+
+| Component | Ubuntu 24.04+ | Pop!_OS 22.04+ | Fedora 41+ | Linux Mint 21+ | Manjaro |
 |-----------|--------------|---------------|-----------|-----------------|---------|
 | RedThunder K84 KB/Mouse | ✅ Perfect | ✅ Perfect | ✅ Perfect | ✅ Perfect | ✅ Perfect |
 | SSK 128GB USB-C Drive | ✅ Perfect | ✅ Perfect | ✅ Perfect | ✅ Perfect | ✅ Perfect |

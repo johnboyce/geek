@@ -58,7 +58,7 @@ All peripherals listed are fully compatible with Linux systems.
 - **Desktop Environment**: GNOME (default)
 - **Download**: https://fedoraproject.org/workstation/
 
-### Best Lightweight: Linux Mint 21.3 "Virginia"
+### Best Lightweight: Linux Mint 21+ (Current: 21.3 "Virginia")
 **Recommended for: Older hardware or users preferring traditional desktop**
 
 - **Pros**:
