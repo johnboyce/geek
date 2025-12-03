@@ -72,6 +72,14 @@ Solutions for common issues:
 - Performance issues
 - System recovery
 
+### 9. [Peripheral Setup](09-peripheral-setup.md)
+Detailed configuration for specific peripherals:
+- RedThunder K84 wireless keyboard and mouse
+- SSK 128GB USB-C flash drive
+- Acer Nitro KG241Y gaming monitor
+- Performance benchmarking
+- Troubleshooting guides
+
 ## Quick Navigation
 
 ### By Use Case
