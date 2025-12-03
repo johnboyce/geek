@@ -1,0 +1,29 @@
+{
+  "name": "geek",
+  "version": "1.0.0",
+  "description": "Complete documentation and management application for setting up and configuring a Geekom AX8 mini PC with Linux.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geekom",
+    "ax8",
+    "linux",
+    "documentation",
+    "mini-pc",
+    "setup",
+    "configuration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "marked": "^11.0.0"
+  }
+}
