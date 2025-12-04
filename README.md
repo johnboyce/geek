@@ -44,6 +44,7 @@ Browse the documentation in the `docs/` directory (organized in chronological se
 12. [Troubleshooting](docs/12-troubleshooting.md) - Solutions for common issues
 13. [Home Server Operating Systems](docs/13-home-server-os.md) - CasaOS, Umbrel, TrueNAS, and more
 14. [BookStack Installation](docs/14-bookstack-installation.md) - Self-hosted documentation platform
+15. [Web Server & Networking](docs/15-web-server-networking.md) - Nginx vs Apache, Dynamic DNS, Docker port management, VPN options
 
 ### Run the Documentation Web App
 
@@ -83,6 +84,7 @@ For more commands, run `make help`
 - **Gaming**: Steam, Proton, Lutris, performance optimization, and controller setup
 - **Streaming**: OBS, FFmpeg, Plex, Jellyfin, and hardware-accelerated transcoding
 - **Troubleshooting**: Solutions for common issues and system recovery
+- **Web Server & Networking**: Nginx vs Apache, Dynamic DNS, Docker services, VPN comparison
 
 ### Web Application Features
 

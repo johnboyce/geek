@@ -134,6 +134,17 @@ Solutions for common issues:
 - Maintenance and backup procedures
 - Advanced configuration
 
+### 15. [Web Server, Networking & Public Services](15-web-server-networking.md)
+**NEW: Complete guide for hosting public services:**
+- **Nginx vs Apache comparison** (recommendation: Nginx)
+- **UI management tools** (Nginx Proxy Manager, Traefik)
+- **Dynamic DNS setup** for Comcast/Surfboard gateway
+- **Docker port management** strategies
+- **VPN options and cost comparison** (Tailscale, WireGuard, OpenVPN)
+- Reverse proxy configuration
+- Security best practices for public services
+- Complete setup walkthrough with examples
+
 ## Quick Navigation
 
 ### By Use Case
@@ -155,6 +166,9 @@ Solutions for common issues:
 
 **Home Server:**
 1. Hardware Specs → BIOS Config → Linux Installation → Security → Home Server OS → Remote Access → BookStack
+
+**Public Services Host:**
+1. Hardware Specs → BIOS Config → Linux Installation → Security → Web Server & Networking → Remote Access
 
 **Documentation Platform:**
 1. Hardware Specs → Linux Installation → Home Server OS (CasaOS) → BookStack Installation
