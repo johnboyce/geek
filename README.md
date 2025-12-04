@@ -18,6 +18,10 @@ This repository provides comprehensive documentation for:
 
 ## Quick Start
 
+### 🚀 NEW Users: Start Here!
+
+**[📖 Installation Quick Start Guide](docs/00-installation-quick-start.md)** - Get enthusiastic recommendations for YOUR setup with complete cost breakdowns!
+
 ### View Documentation Online
 
 **🌐 [Visit the GitHub Pages Site](https://johnboyce.github.io/geek/)**
@@ -29,6 +33,8 @@ The easiest way to browse the documentation is through our GitHub Pages site, wh
 ### View Documentation Locally
 
 Browse the documentation in the `docs/` directory (organized in chronological setup order):
+
+**🚀 NEW: [Installation Quick Start Guide](docs/00-installation-quick-start.md)** - **Start here for enthusiastic recommendations!**
 
 1. [Hardware Specifications](docs/01-hardware-specs.md) - Including AI capabilities and AMD EXPO
 2. [BIOS Configuration](docs/02-bios-configuration.md) - Configure before OS installation, includes EXPO settings

@@ -2,7 +2,30 @@
 
 This directory contains comprehensive documentation for setting up and managing your Geekom AX8 mini PC with Linux.
 
+## 🚀 NEW: Quick Start Guide!
+
+**[📖 Installation Quick Start Guide](00-installation-quick-start.md)** - **START HERE!**
+
+Looking for the FASTEST way to get started? This enthusiastic guide helps you:
+- ✨ Choose the perfect setup for YOUR needs (6 optimized paths!)
+- 💰 See complete cost breakdowns (spoiler: almost everything is FREE!)
+- 🎯 Get step-by-step recommendations with "why it's awesome" explanations
+- 🏃 Go from zero to running in 15-120 minutes depending on your choice!
+
+Perfect for first-time users or anyone wanting a quick decision guide!
+
+---
+
 ## Documentation Guide
+
+### 0. [🚀 Installation Quick Start](00-installation-quick-start.md) - **NEW!**
+**Your enthusiastic guide to getting started FAST!**
+- Recommended installation paths for different use cases
+- Complete cost breakdowns (almost everything is FREE!)
+- Quick comparison tables
+- Step-by-step setup guides with WHY each option rocks
+- Real-world savings calculations
+- Perfect for: Everyone - start here if you want clear recommendations!
 
 ### 1. [Hardware Specifications](01-hardware-specs.md)
 Complete hardware specifications of the Geekom AX8, including:
